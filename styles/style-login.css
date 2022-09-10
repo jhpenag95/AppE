@@ -19,7 +19,7 @@
 body {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(to right top, #051937, #0a2f52, #0c476e, #0b6089, #077ba4);
+    background-image: linear-gradient(to right top, #245353, #14535b, #005264, #00516c, #0c4e73, #084f75, #045178, #00527a, #005877, #005d71, #006168, #06645e);
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover;
@@ -169,3 +169,23 @@ body h1 {
     }
 }
 */
+
+@media screen and (min-width: 600px){
+    .contenedorlogin {
+        width: 400px;
+        height: 600px;
+    }
+}
+
+
+@media screen and (min-width: 700px){
+    .contenedorlogin {
+        width: 400px;
+        height: 500px;
+    }
+
+    .contenedorlogin input {
+        width: 92%;
+        padding: 12px;
+    }
+}
