@@ -1,5 +1,12 @@
-const menu = document.getElementById('navcontenedor');
+const btnActivarMenu =  document.querySelector('.actmeni');
+const menuFlecha = document.getElementById('menuFlecha');
 
-menu = function menu() {
-    
-}
+btnActivarMenu.addEventListener('click', () =>{
+    document.getElementById('nav-contenedor').classList.toggle('active');
+})
+
+
+
+
+
+
