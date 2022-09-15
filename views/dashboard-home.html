@@ -25,21 +25,47 @@
                 <img src="../icons/imagenPerfil.png" alt="Imágen de Perfil">
             </div>
         </div>
-        <div id="nav-contenedor" class="active">
-            <ul class="nav-items">
-                <li class="items">
-                    <a href="#" class="nav-link"><img src="../icons/alert-octagon.svg" alt="Icono para alerta" class="icono-menu"> Ingresar Error</li></a>
-                <li class="items">
-                    <a href="#" class="nav-link"><img src="../icons/search.svg" alt="Icono para consulta" class="icono-menu"> Consultar</li></a>
-                <li class="items">
-                    <a href="#" class="nav-link"><img src="../icons/archive.svg" alt="Icono para archivo" class="icono-menu"> IF. Error</li></a>
-            </ul>
-        </div>
     </header>
     <main>
-
+        <aside id="nav-contenedor" class="active">
+            <ul class="nav-items">
+                <li class="items">
+                    <a href="#" class="nav-link"><img src="../icons/alert-octagon.svg" alt="Icono para alerta"
+                            class="icono-menu"><span>Ingresar Error</span>
+                </li></a>
+                <li class="items">
+                    <a href="#" class="nav-link"><img src="../icons/search.svg" alt="Icono para consulta"
+                            class="icono-menu"><span>Consultar</span>
+                </li></a>
+                <li class="items">
+                    <a href="#" class="nav-link"><img src="../icons/archive.svg" alt="Icono para archivo"
+                            class="icono-menu"><span>IF. Error</span>
+                </li></a>
+            </ul>
+        </aside>
+        <div class="main-contenedor">
+            <div class="contenerdor-input">
+                <input type="text" class="input-items" placeholder="No. Caso">
+                <input type="text" class="input-items" placeholder="Nombre de Empresa">
+                <input type="text" class="input-items" placeholder="Nombre descripción del Error">
+                <label for="" class="textarea-titulo">Descripición:</label>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Descripición:" class="textarea-intems"></textarea>
+                <label for="" class="textarea-titulo">Solución:</label>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Solución:" class="textarea-intems"></textarea>
+                <div class="main-contenedor--btns">
+                    <div class="btn-file">
+                        <p class="btn-text">Seleccionar</p>
+                        <input type="file" value="Subir Archivo" class="subarchivo">
+                    </div>
+                    <div class="btn-file">
+                        <p class="btn-text">Guardar</p>
+                        <input type="submit" value="guardar" class="guardar">
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
-    <button class="actmeni" >
+    <button class="actmeni">
         <img src="../icons/log-out.svg" alt="icono de menu" id="menuFlecha">
     </button>
     <!--======Iconos====-->
