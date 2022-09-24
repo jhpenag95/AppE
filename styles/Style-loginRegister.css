@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+
+:root {
+  --col-1: #FFFFFF;
+  --col-2: #0D2C54;
+  --col-3: #7FB800;
+  --col-4: #EB984E; 
+  --col-5: #F6511D; 
+  --col-6: #7F8C8D; 
+  --col-7: #FFDCF9;    
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.contenedorLoginRegister {
+  width: 100vw;
+  height: 100vh;
+  background-color: #0D2C54;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/**********=========Login=========**********/
+
+.login {
+  width: 360px;
+  height: 400px;
+  padding: 4px;
+  text-align: center;
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.login h2 {
+  padding: 10px 10px;
+  color: var(--col-3);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.login .inputs-info {
+  width: 90%;
+  height: 40px;
+  border-radius: 8px;
+  outline: none;
+  padding: 4px 8px;
+  border: none;
+  margin: 8px 0px 8px 0px;
+  font-size: 1rem;
+  color: var(--col-6);
+  transition: 1s all;
+}
+
+.login .inputs-info:hover {
+  font-size: 1.2rem;
+}
+
+.login .input-btn {
+  padding: 12px 60px;
+  background-color: var(--col-3);
+  color: var(--col-2);
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 8px;
+  margin: 16px 0px 16px 0px;
+  transition: 1s all;
+}
+
+.login .input-btn:hover {
+  background: var(--col-2);
+  color: var(--col-1);
+}
+
+.linkLogin {
+  padding: 8px 10px;
+  border: none;
+  background: var(--col-2);
+  color: var(--col-1);
+  position: absolute;
+  bottom: 10px;
+  right: 0px;
+  transition: 1s all;
+}
+
+.linkLogin:hover {
+  background: var(--col-1);
+  color: var(--col-2);
+}
+
+/**********=========registro=========**********/
+
+.registro {
+  width: 360px;
+  height: 400px;
+  padding: 4px;
+  text-align: center;
+  background: rgba( 3, 41, 74, 1 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.registro h2 {
+  padding: 10px 10px;
+  color: var(--col-3);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.registro .inputs-info {
+  width: 90%;
+  height: 40px;
+  border-radius: 8px;
+  outline: none;
+  padding: 4px 8px;
+  border: none;
+  margin: 8px 0px 8px 0px;
+  font-size: 1rem;
+  color: var(--col-6);
+  transition: 1s all;
+}
+
+.registro .inputs-info:hover {
+  font-size: 1.2rem;
+}
+
+.registro .input-btn {
+  padding: 12px 60px;
+  background-color: var(--col-3);
+  color: var(--col-2);
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 8px;
+  margin: 16px 0px 16px 0px;
+  transition: 1s all;
+}
+
+.registro .input-btn:hover {
+  background: var(--col-2);
+  color: var(--col-1);
+}
+
+.registro .linkRegistrar {
+  padding: 8px 10px;
+  border: none;
+  font-weight: bolder;
+  background: var(--col-1);
+  color: var(--col-2);
+  position: absolute;
+  bottom: 10px;
+  right: 0px;
+  transition: 1s all;
+}
+
+.registro .linkRegistrar:hover {
+  background: var(--col-1);
+  color: var(--col-2);
+}

@@ -21,9 +21,7 @@
         <div class="background">
             <div class="tex">
                 <div class="lottile">
-                    <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_X8wA00rqrk.json"
-                        background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay>
-                    </lottie-player>
+                    <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_X8wA00rqrk.json"  background="transparent"  speed="1"  style="width: 600px; height: 600px;"  loop  autoplay></lottie-player>
                 </div>
                 <div class="text-info">
                     <h1>Bienvenido a AppE</h1>
