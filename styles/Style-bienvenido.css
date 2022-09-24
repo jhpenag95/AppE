@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+:root {
+    --col-1: #FFFFFF;
+    --col-2: #0D2C54;
+    --col-3: #7FB800;
+    --col-4: #EB984E; 
+    --col-5: #F6511D; 
+    --col-6: #7F8C8D; 
+    --col-7: #FFDCF9;    
+}
+
+
+.contenedor {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/ciudadFuturista.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.contenedor .background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background: rgba( 0, 0, 0, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tex {
+    width: 260px;
+    text-align: center;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tex .lottile {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lottile lottie-player {
+    width: 100%;
+    height: 100%;
+}
+
+.text-info {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-info h1 {
+    font-size: 2.5rem;
+    color: var(--col-1);
+    padding: 8px;
+    margin: 20px 0px 20px 0px;
+    text-shadow: 6px 4px 2px var(--col-2);
+    font-family:'Open Sans', sans-serif;
+}
+
+.text-info .btniniciar{
+    width: 200px;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 18px;
+    background: var(--col-3);
+    color: var(--col-2);
+    padding: 18px;
+    border-radius: 12px;
+    font-family:'Open Sans', sans-serif;
+    transition: 1s all;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.text-info .btniniciar:hover {
+    background-color: var(--col-2);
+    color: var(--col-1);
+}
+
