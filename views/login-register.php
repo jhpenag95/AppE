@@ -38,7 +38,7 @@
             <!--=====registro=====-->
             <div id="registro">
                 <h2>Registrar</h2>
-                <form action="../config/registro.php" method="POST">
+                <form action="../config/registro.php" method="POST" enctype="multipart/form-data">
                     <input class="inputs-info" type="text" name="userReg" placeholder="Ingrese su Usuario">
                     <input class="inputs-info" type="email" name="emailReg" placeholder="Ingrese su Correo">
                     <input class="inputs-info" type="password" name="passwordReg" placeholder="Ingrese su Contraseña">
@@ -46,7 +46,7 @@
                         <p>Imagen</p>
                         <input class="inputs-foto" type="file" name="fotoPerfil" placeholder="Ingrese su Contraseña">
                     </div>
-                    <input class="input-btn2" type="submit" value="Registrar">
+                    <input class="input-btn2" type="submit" name="input-btn2" value="Registrar">
                 </form>
                 <button class="linkLogin" onclick="ingresa()">
                     Ingresar

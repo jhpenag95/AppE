@@ -1,4 +1,5 @@
 <!--
+    /**Evita ingresar sin login */
 <?php
  session_start();
 
@@ -7,7 +8,6 @@
     session_destroy();
     die();
  }
- 
 ?>
 -->
 <!DOCTYPE html>
@@ -28,21 +28,27 @@
 </head>
 
 <body>
+    <?php
+        require ("../config/database.php");
+        $solicitar = $conexion->query("SELECT * FROM usuarios WHERE id = '".$_GET['id']."'");
+        $row = $solicitar->fetch_assoc();
+    ?>
+
     <header>
         <div class="item-header">
             <div class="logo">
                 <p>AppE</p>
             </div>
             <div class="imgperfil">
-                <img src="../icons/imagenPerfil.png" alt="Imágen de Perfil">
-                <ul>
-                    <li><a href="../config/cerrar_sesion.php">
-                            <i class='bx bx-log-out icon'></i>
-                            <span class="text nav-text">Salir</span>
-                        </a>
-                    </li>
-                </ul>
+            <img src="<?php echo $row['imgPer']; ?>" alt="Imágen de Perfil">
             </div>
+            <!-- <ul>
+                <li><a href="../config/cerrar_sesion.php">
+                        <i class='bx bx-log-out icon'></i>
+                        <span class="text nav-text">Salir</span>
+                    </a>
+                </li>
+            </ul> -->
         </div>
     </header>
     <main>
@@ -93,6 +99,7 @@
     <script src="https://kit.fontawesome.com/e0bd086848.js" crossorigin="anonymous"></script>
 
 </body>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="../script/nav-home.js"></script>
 
 </html>

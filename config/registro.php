@@ -7,9 +7,16 @@
     $email = $_POST['emailReg'];
     $contrasena = $_POST['passwordReg'];
     $contrasena = hash('sha512',$contrasena);//encriptar contraseña
-    $imgPer = $_POST['fotoPerfil'];
+    $imgPer = addslashes(file_get_contents($_FILES['fotoPerfil']['tmp_name']));
 
-    
+    // if (isset($_POST['input-btn2'])) {
+    //     $ruta = "../fotosdePerfil";
+    //     $fichero = $ruta.basename($_FILES['fotoPerfil']['name']);
+    //     if (move_uploaded_file($_FILES['fotoPerfil'][tmp_name], $ruta.$_GET['id'])) {
+    //         echo "subio";
+    //     }
+    // }
+
     $query = "INSERT INTO usuarios(nombre_usuario,email,contrasena,imgPer) 
             VALUES('$user','$email','$contrasena','$imgPer')";
 

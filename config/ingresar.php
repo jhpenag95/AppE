@@ -19,7 +19,7 @@
         echo '
         <script>
             alert("Usuario no se encuentra creado, por favor veririca los datos !!");
-            window.location="../index.php";
+            window.location = "../views/login-register.php";
         </script>
         ';
         
