@@ -1,5 +1,3 @@
 <?php
-    
-    $conexion = mysqli_cone("localhost","root","","appe");
-    
-?>
+    $conexion = mysqli_connect("localhost","root","","appe");
+?>  

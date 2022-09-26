@@ -1,3 +1,13 @@
+<?php
+session_start();
+
+if (isset($_SESSION['usuario'])) {
+   header("location: index.php");
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -7,6 +17,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienvenido</title>
     <link rel="stylesheet" href="styles/Style-bienvenido.css">
+    <link rel="stylesheet" href="styles/Style-preLoader.css">
 
     <!--====Fonts====-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,11 +28,17 @@
 </head>
 
 <body>
+    <div class="preloader">
+        <div class="loader">
+        </div>
+    </div>
     <div class="contenedor">
         <div class="background">
             <div class="tex">
                 <div class="lottile">
-                    <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_X8wA00rqrk.json"  background="transparent"  speed="1"  style="width: 600px; height: 600px;"  loop  autoplay></lottie-player>
+                    <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_X8wA00rqrk.json"
+                        background="transparent" speed="1" style="width: 600px; height: 600px;" loop autoplay>
+                    </lottie-player>
                 </div>
                 <div class="text-info">
                     <h1>Bienvenido a AppE</h1>
@@ -32,5 +49,6 @@
     </div>
 </body>
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<link rel="stylesheet" href="script/preLoader.js">
 
 </html>

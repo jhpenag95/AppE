@@ -1,5 +1,17 @@
+<!--
+<?php
+ session_start();
+
+ if (!isset($_SESSION['usuario'])) {
+    header("location: erroDebeLogear.php");
+    session_destroy();
+    die();
+ }
+ 
+?>
+-->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -23,6 +35,13 @@
             </div>
             <div class="imgperfil">
                 <img src="../icons/imagenPerfil.png" alt="Imágen de Perfil">
+                <ul>
+                    <li><a href="../config/cerrar_sesion.php">
+                            <i class='bx bx-log-out icon'></i>
+                            <span class="text nav-text">Salir</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </header>
@@ -49,7 +68,8 @@
                 <input type="text" class="input-items" placeholder="Nombre de Empresa">
                 <input type="text" class="input-items" placeholder="Nombre descripción del Error">
                 <label for="" class="textarea-titulo">Descripición:</label>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Descripición:" class="textarea-intems"></textarea>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Descripición:"
+                    class="textarea-intems"></textarea>
                 <label for="" class="textarea-titulo">Solución:</label>
                 <textarea name="" id="" cols="30" rows="10" placeholder="Solución:" class="textarea-intems"></textarea>
                 <div class="main-contenedor--btns">
@@ -68,7 +88,7 @@
             <img src="../icons/log-out.svg" alt="icono de menu" id="menuFlecha">
         </button>
     </main>
-    
+
     <!--======Iconos====-->
     <script src="https://kit.fontawesome.com/e0bd086848.js" crossorigin="anonymous"></script>
 
