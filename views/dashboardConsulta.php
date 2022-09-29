@@ -85,7 +85,7 @@
                 </div>
             </div>
         </div>
-        <button class="actmenu">
+        <button class="actmeni">
             <img src="../icons/log-out.svg" alt="icono de menu" id="menuFlecha">
         </button>
     </main>

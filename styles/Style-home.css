@@ -6,6 +6,7 @@
 
 body {
     font-family:'Open Sans', sans-serif;
+    overflow: hidden;
 }
 
 :root {
@@ -134,7 +135,7 @@ body {
 
 
 
-.actmeni {
+.actmenu {
     width: 40px;
     height: 40px;
     border-radius: 50px;
@@ -143,142 +144,44 @@ body {
     justify-content: center;
     position: absolute;
     cursor: pointer;
-    bottom: 12px;
-    right: 12px;
+    bottom: 92px;
+    right: 37px;
     border: none;
     box-shadow: 0 0 16px var(--col-3);
+    z-index: 2;
 }
 
 
 /***===================main-inputs======================**/
 
-main {
-    height: 760px;
+.main-contenedor {
+    width: 400px;
+    height: 80vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #7F8C8D;
+    position: absolute;
+    top: 34px;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
-
-.contenerdor-input {
+.main-contenedor .contenerdor-input {
     width: 100%;
     height: 600px;
-    margin: auto auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: absolute;
-    top: 120px;
-}
-
-.contenerdor-input .input-items{
-    width: 90%;
-    padding: 10px;
-    height: 46px;
-    outline: none;
-    font-size: 14px;
-    font-weight: 600;
-    margin: 0px 0px 16px 0px;
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 10, 0.37 );
-    backdrop-filter: blur( 0px );
-    -webkit-backdrop-filter: blur( 0px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
-
-.contenerdor-input .input-items:hover{
-    border: 2px solid var(--col-2);
-}
-
-.contenerdor-input .textarea-intems {
-    width: 90%;
-    height: auto;
-    padding: 10px;
-    margin: 10px 0 24px 0;
-    outline: none;
-    font-size: 14px;
-    font-weight: 600;
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 10, 0.37 );
-    backdrop-filter: blur( 0px );
-    -webkit-backdrop-filter: blur( 0px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
-
-.contenerdor-input .textarea-intems:hover {
-    border: 2px solid var(--col-2);
-}
-
-.contenerdor-input .textarea-titulo {
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-    color: var(--col-2);
-    font-size: 18px;
-    font-weight: 700;
-}
-
-.main-contenedor--btns {
-    width: 200px;
-    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.main-contenedor--btns .btn-file {
-    width: 150px;
-    height: 40px;
-    margin: 16px 0px 16px 0px;
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
 
-    background: rgba( 126, 211, 33, 1 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-    border-radius: 10px;
 
-    transition: .8s all;
-}
 
-.main-contenedor--btns .btn-file:hover {
-    background: rgba( 13, 66, 125, 1 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-    border-radius: 10px;
-    color: var(--col-1);
-}
-
-.main-contenedor--btns .btn-file .btn-text {
-    text-align: center;
-    color: var(--col-1);
-}
-
-.btn-file .subarchivo {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-}
-
-.main-contenedor--btns .guardar {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-}
+/*********==========================Menú================================*********/
 
 
 @media screen and (min-width: 400px){
@@ -305,7 +208,12 @@ main {
 }
 
 @media screen and (min-width: 800px){
-    .actmeni {
+
+    #nav-contenedor.active {
+        left: -605px;
+    }
+
+    .actmenu {
         display: none;
     }
 

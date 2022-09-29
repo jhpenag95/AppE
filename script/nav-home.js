@@ -1,4 +1,4 @@
-const btnActivarMenu =  document.querySelector('.actmeni');
+const btnActivarMenu =  document.querySelector('.actmenu');
 const menuFlecha = document.getElementById('menuFlecha');
 
 btnActivarMenu.addEventListener('click', () =>{
